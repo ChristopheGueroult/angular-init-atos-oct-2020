@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "crm-atos-octobre"
+    }
+  },
+  "defaultProject": "crm-atos-octobre",
+  "cli": {
+    "analytics": false
+  }
 }
