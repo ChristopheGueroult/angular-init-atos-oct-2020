@@ -1,7 +1,31 @@
-
 <app-template-fullwidth title="Orders">
 
-  <app-button label="Add an order" route="add"></app-button>
+  <!-- <ng-container *ngIf="collection$ | async as collection">
+    <div>{{ collection | json }}</div>
+  </ng-container> -->
+
+  <app-tableau-light *ngIf="collection$ | async as collection" [headers]="headers">
+    <tr *ngFor="let item of collection">
+      <td>{{ item.typePresta }}</td>
+      <td>{{ item.client }}</td>
+      <td>{{ item.nbJours }}</td>
+      <td>{{ item.tjmHt | currency }}</td>
+      <td>{{ item.tjmHt | total: item.nbJours | currency }}</td>
+      <td>{{ item.tjmHt | total: item.nbJours : item.tva | currency }}</td>
+      <td>
+        <select>
+          <option *ngFor="let state of states" [value]="state" [selected]="state === item.state">{{ state }}</option>
+          <!-- <option value="CANCELED" selected="false">CANCELED</option>
+          <option value="OPTION" selected="true">OPTION</option>
+          <option value="CONFIRMED" selected="false">CONFIRMED</option> -->
+        </select>
+      </td>
+    </tr>
+  </app-tableau-light>
+
+
+
+  <app-button #test label="Add an order" route="add"></app-button>
   <app-button label="Go to Google" href="http://www.google.fr"></app-button>
   <app-button label="Action" [action]="true" (clicked)="popup()"></app-button>
 

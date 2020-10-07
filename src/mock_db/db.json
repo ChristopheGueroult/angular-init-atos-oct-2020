@@ -2,9 +2,9 @@
   "orders": [
     {
       "tjmHt": 1200,
-      "nbJours": 1,
+      "nbJours": 2,
       "tva": 20,
-      "state": "Option",
+      "state": "OPTION",
       "typePresta": "formation",
       "client": "M2i",
       "comment": "merci m2i",
@@ -12,9 +12,9 @@
     },
     {
       "tjmHt": 1200,
-      "nbJours": 1,
+      "nbJours": 3,
       "tva": 20,
-      "state": "Confirmed",
+      "state": "CONFIRMED",
       "typePresta": "formation",
       "client": "Modis",
       "comment": "merci modis",
@@ -23,14 +23,14 @@
   ],
   "clients": [
     {
-      "state": "Active",
+      "state": "ACTIVE",
       "id": 1,
       "name": "Christophe2",
       "totalCaHt": 12000,
       "comment": "un comment pour client christophe2"
     },
     {
-      "state": "Active",
+      "state": "INACTIVE",
       "id": 2,
       "name": "Modis",
       "totalCaHt": 120000,

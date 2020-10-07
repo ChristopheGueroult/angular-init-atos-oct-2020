@@ -4,11 +4,13 @@ import { RouterModule } from '@angular/router';
 import { TemplatesModule } from '../templates/templates.module';
 import { TextModule } from '../text/text.module';
 import { ButtonComponent } from './components/button/button.component';
+import { TableauLightComponent } from './components/tableau-light/tableau-light.component';
+import { TotalPipe } from './pipes/total.pipe';
 
 
 
 @NgModule({
-  declarations: [ButtonComponent],
+  declarations: [ButtonComponent, TableauLightComponent, TotalPipe],
   imports: [
     CommonModule,
     RouterModule
@@ -16,7 +18,9 @@ import { ButtonComponent } from './components/button/button.component';
   exports: [
     TemplatesModule,
     TextModule,
-    ButtonComponent
+    ButtonComponent,
+    TableauLightComponent,
+    TotalPipe
   ]
 })
 export class SharedModule { }
