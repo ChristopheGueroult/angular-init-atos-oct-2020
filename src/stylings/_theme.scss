@@ -1,14 +1,13 @@
 :root {
-  --primary: #05cad1;
-  --secondary: #70148b;
+  --app-primary: #05cad1;
+  --app-secondary: #70148b;
 
-  --dark: #424242;
-  --light: #ffffff;
-  --darklight: #dbdada;
+  --app-dark: #424242;
+  --app-light: #ffffff;
+  --app-darklight: #dbdada;
 
-  --error: #e2445c;
-  --warning: #f77e2e;
-  --success: #00c875;
+  --app-error: #e2445c;
+  --app-warning: #f77e2e;
+  --app-success: #00c875;
 }
 
-$color1: green;

@@ -4,7 +4,7 @@
 /// Description design of user interface
 header {
   height: 65px;
-  background: var(--light);
+  background: var(--app-light);
   padding: 0 $gutter;
   display: flex;
   align-items: center;
@@ -12,13 +12,13 @@ header {
 
 
 main {
-  // background: var(--light);
+  background: var(--app-darklight);
   min-height: calc(100vh - 65px);
   padding-top: 65px;
 }
 
 aside {
-  background: var(--dark);
+  background: var(--app-dark);
   width: 250px;
   min-height: 100vh;
   position: fixed;
@@ -40,7 +40,7 @@ aside {
 }
 
 .shadow {
-  background: rgba(var(--dark), .8);
+  background: rgba(var(--app-dark), .8);
   width: 100%;
   min-height: 100vh;
   z-index: 1000;
@@ -58,7 +58,7 @@ aside {
 
 
 footer {
-  background: var(--light);
+  background: var(--app-light);
 }
 
 @media (min-width: $md-breakpoint) {

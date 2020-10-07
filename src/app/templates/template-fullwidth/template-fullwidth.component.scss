@@ -1,0 +1,12 @@
+@import '~src/stylings/layout';
+
+.bandeau {
+  background: var(--app-primary);
+  padding: $gutter * 2;
+  h1 {
+    margin: 0;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+}

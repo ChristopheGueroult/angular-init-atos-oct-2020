@@ -1,0 +1,29 @@
+a, button {
+  border: none;
+  margin-left: 10px;
+  color: var(--app-light);
+  display: inline-block;
+  padding: 1em;
+  font-size: var(--app-regular-fs);
+  background: var(--app-primary);
+  transition: all .5s;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// :host-context(app-template-a) a, :host-context(app-template-a) button {
+//   background: $color1;
+//   transition: all .5s;
+//   &:hover {
+//     background: darken($color1, 10);
+//   }
+// }
+
+// :host-context(app-template-b) a, :host-context(app-template-b) button {
+//   background: $color2;
+//   transition: all .5s;
+//   &:hover {
+//     background: darken($color2, 10);
+//   }
+// }
