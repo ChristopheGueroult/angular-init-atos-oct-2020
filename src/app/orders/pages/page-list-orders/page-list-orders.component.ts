@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
 import { Order } from 'src/app/core/models/order';
 import { OrdersService } from 'src/app/core/services/orders.service';
 import { Observable, Subscription } from 'rxjs';
@@ -15,7 +15,10 @@ export class PageListOrdersComponent implements OnInit {
   public collection$: Observable<Order[]>;
   public headers: string[];
   public states = Object.values(StateOrder);
-  constructor(private os: OrdersService) { }
+  constructor(
+    private os: OrdersService,
+    private ref: ChangeDetectorRef
+  ) { }
 
   ngOnInit(): void {
     this.collection$ = this.os.collection;
@@ -35,6 +38,14 @@ export class PageListOrdersComponent implements OnInit {
 
   public popup(): void {
     console.log('open popup');
+  }
+
+  public changeState(item: Order, event): void {
+    const state = event.target.value;
+    this.os.changeState(item, state).subscribe((res) => {
+      item.state = res.state;
+      this.ref.detectChanges();
+    });
   }
 
   // ngOnDestroy(): void {

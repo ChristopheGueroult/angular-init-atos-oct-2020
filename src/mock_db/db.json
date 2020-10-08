@@ -14,7 +14,7 @@
       "tjmHt": 1200,
       "nbJours": 3,
       "tva": 20,
-      "state": "CONFIRMED",
+      "state": "OPTION",
       "typePresta": "formation",
       "client": "Modis",
       "comment": "merci modis",
@@ -24,6 +24,7 @@
   "clients": [
     {
       "state": "ACTIVE",
+      "tva": 20,
       "id": 1,
       "name": "Christophe2",
       "totalCaHt": 12000,
@@ -31,6 +32,7 @@
     },
     {
       "state": "INACTIVE",
+      "tva": 20,
       "id": 2,
       "name": "Modis",
       "totalCaHt": 120000,
