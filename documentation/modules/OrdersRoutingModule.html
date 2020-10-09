@@ -72,11 +72,24 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
 import { RouterModule, Routes } from &#x27;@angular/router&#x27;;
+import { CommentOrderComponent } from &#x27;./components/comment-order/comment-order.component&#x27;;
+import { DetailOrderComponent } from &#x27;./components/detail-order/detail-order.component&#x27;;
+import { PageAddOrderComponent } from &#x27;./pages/page-add-order/page-add-order.component&#x27;;
 import { PageListOrdersComponent } from &#x27;./pages/page-list-orders/page-list-orders.component&#x27;;
 
 
 const routes: Routes &#x3D; [
-  { path: &#x27;&#x27;, component: PageListOrdersComponent },
+  {
+    path: &#x27;&#x27;,
+    component: PageListOrdersComponent,
+    children: [
+      { path: &#x27;&#x27;, redirectTo: &#x27;detail&#x27;, pathMatch: &#x27;full&#x27; },
+      { path: &#x27;detail&#x27;, component: DetailOrderComponent },
+      { path: &#x27;comment&#x27;, component: CommentOrderComponent },
+    ],
+    data: {title: &#x27;Orders&#x27;}
+  },
+  { path: &#x27;add&#x27;, component: PageAddOrderComponent },
 ];
 
 @NgModule({

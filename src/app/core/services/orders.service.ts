@@ -35,6 +35,17 @@ export class OrdersService {
     return this.update(obj);
   }
 
+  /**
+   *
+   * @example
+   * this.ordersService.update(item).subscribe(
+   *  (res) => {//res API}
+   * );
+   *
+   * @description - This function allows you to modify a service in the orders collection
+   * @param item - Object sent to the API which must be of type Order
+   * @return - use HttpClient and return an Observable to subscribe to retrieve the response from the API
+   */
   public update(item: Order): Observable<Order> {
     return this.http.put<Order>(`${this.urlApi}/orders/${item.id}`, item);
   }
@@ -46,4 +57,7 @@ export class OrdersService {
   // delete
 
   // get item by id
+  public getItemById(id: string): Observable<Order> {
+    return this.http.get<Order>(`${this.urlApi}/orders/${id}`);
+  }
 }

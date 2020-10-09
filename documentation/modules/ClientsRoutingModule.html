@@ -73,10 +73,12 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
 import { RouterModule, Routes } from &#x27;@angular/router&#x27;;
 import { PageListClientsComponent } from &#x27;./pages/page-list-clients/page-list-clients.component&#x27;;
+import { PageAddClientComponent } from &#x27;./pages/page-add-client/page-add-client.component&#x27;;
 
 
 const routes: Routes &#x3D; [
   { path: &#x27;&#x27;, component: PageListClientsComponent },
+  { path: &#x27;add&#x27;, component: PageAddClientComponent },
 ];
 
 @NgModule({

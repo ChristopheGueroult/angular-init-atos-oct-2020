@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { StateOrder } from 'src/app/core/enums/state-order.enum';
 import { Link } from 'src/app/core/interfaces/link';
@@ -20,7 +20,8 @@ export class PageListOrdersComponent implements OnInit {
   constructor(
     private os: OrdersService,
     private ref: ChangeDetectorRef,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -65,6 +66,10 @@ export class PageListOrdersComponent implements OnInit {
   public getDetails(item): void {
     this.os.myItem$.next(item);
 
+  }
+
+  public goToEdit(item): void {
+    this.router.navigate(['orders', 'edit', item.id]);
   }
 
 }

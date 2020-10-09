@@ -4,6 +4,8 @@
       <tr *ngFor="let item of collection">
         <td>
           <button (click)="getDetails(item)">détails</button>
+          <app-icon-edit (click)="goToEdit(item)"></app-icon-edit>
+          <app-icon-delete></app-icon-delete>
         </td>
         <td>{{ item.typePresta }}</td>
         <td>{{ item.client }}</td>
@@ -12,7 +14,7 @@
         <td>{{ item.tjmHt | total: item.nbJours | currency }}</td>
         <td>{{ item.tjmHt | total: item.nbJours : item.tva | currency }}</td>
         <td [appState]="item.state">
-          <select (change)="changeState(item, $event)">
+          <select class="form-control" (change)="changeState(item, $event)">
             <option *ngFor="let state of states" [value]="state" [selected]="state === item.state">{{ state }}</option>
           </select>
         </td>

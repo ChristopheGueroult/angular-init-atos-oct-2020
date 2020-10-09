@@ -121,6 +121,21 @@
     <h3 id="index">Index</h3>
     <table class="table table-sm table-bordered index-table">
         <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#item">item</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
 
                 <tr>
                     <td class="col-md-4">
@@ -130,6 +145,10 @@
                 <tr>
                     <td class="col-md-4">
                         <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#add">add</a>
+                            </li>
                             <li>
                                 <a href="#ngOnInit">ngOnInit</a>
                             </li>
@@ -151,15 +170,69 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor()</code>
+<code>constructor(os: <a href="../injectables/OrdersService.html">OrdersService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/orders/pages/page-add-order/page-add-order.component.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/orders/pages/page-add-order/page-add-order.component.ts:12</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>os</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/OrdersService.html" target="_self" >OrdersService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
             </tbody>
         </table>
 </section>
@@ -173,6 +246,78 @@
     <h3 id="methods">
         Methods
     </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="add"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            add
+                        </b>
+                        <a href="#add"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>add(item: <a href="../classes/Order.html">Order</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">src/app/orders/pages/page-add-order/page-add-order.component.ts:22</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                                <code><a href="../classes/Order.html" target="_self" >Order</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
     <table class="table table-sm table-bordered">
         <tbody>
             <tr>
@@ -195,8 +340,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="12"
-                            class="link-to-prism">src/app/orders/pages/page-add-order/page-add-order.component.ts:12</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/app/orders/pages/page-add-order/page-add-order.component.ts:19</a></div>
                 </td>
             </tr>
 
@@ -213,12 +358,48 @@
         </tbody>
     </table>
 </section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="item"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            item</b>
+                            <a href="#item"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Order()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/orders/pages/page-add-order/page-add-order.component.ts:12</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
 
 </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { OrdersService } from &#x27;src/app/core/services/orders.service&#x27;;
+import { Order } from &#x27;src/app/core/models/order&#x27;;
+import { Router, ActivatedRoute } from &#x27;@angular/router&#x27;;
 
 @Component({
   selector: &#x27;app-page-add-order&#x27;,
@@ -226,10 +407,21 @@
   styleUrls: [&#x27;./page-add-order.component.scss&#x27;]
 })
 export class PageAddOrderComponent implements OnInit {
-
-  constructor() { }
+  public item &#x3D; new Order();
+  constructor(
+    private os: OrdersService,
+    private router: Router,
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  public add(item: Order): void {
+    this.os.add(item).subscribe((res) &#x3D;&gt; {
+      // this.router.navigate([&#x27;orders&#x27;]);
+      this.router.navigate([&#x27;../&#x27;], {relativeTo: this.route});
+    });
   }
 
 }
@@ -237,7 +429,12 @@ export class PageAddOrderComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;p&gt;page-add-order works!&lt;/p&gt;
+        <pre class="line-numbers"><code class="language-html">
+&lt;app-template-container title&#x3D;&quot;Add Order&quot;&gt;
+
+  &lt;app-form-order [init]&#x3D;&quot;item&quot; (submited)&#x3D;&quot;add($event)&quot;&gt;&lt;/app-form-order&gt;
+
+&lt;/app-template-container&gt;
 </code></pre>
     </div>
 
@@ -273,9 +470,9 @@ export class PageAddOrderComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><p>page-add-order works!</p></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconCloseComponent', 'selector': 'app-icon-close'},{'name': 'IconDeleteComponent', 'selector': 'app-icon-delete'},{'name': 'IconEditComponent', 'selector': 'app-icon-edit'},{'name': 'IconNavComponent', 'selector': 'app-icon-nav'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageAddClientComponent', 'selector': 'app-page-add-client'},{'name': 'PageAddOrderComponent', 'selector': 'app-page-add-order'},{'name': 'PageEditClientComponent', 'selector': 'app-page-edit-client'},{'name': 'PageEditOrderComponent', 'selector': 'app-page-edit-order'},{'name': 'PageListClientsComponent', 'selector': 'app-page-list-clients'},{'name': 'PageListOrdersComponent', 'selector': 'app-page-list-orders'},{'name': 'PageLoginComponent', 'selector': 'app-page-login'},{'name': 'TemplateContainerComponent', 'selector': 'app-template-container'},{'name': 'TemplateFullwidthComponent', 'selector': 'app-template-fullwidth'},{'name': 'TextBandeauComponent', 'selector': 'app-text-bandeau'},{'name': 'TextPagesComponent', 'selector': 'app-text-pages'},{'name': 'UiComponent', 'selector': 'app-ui'}];
-    var DIRECTIVES = [];
+        var COMPONENT_TEMPLATE = '<div><app-template-container title="Add Order">  <app-form-order [init]="item" (submited)="add($event)"></app-form-order></app-template-container></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ButtonComponent', 'selector': 'app-button'},{'name': 'CommentOrderComponent', 'selector': 'app-comment-order'},{'name': 'DetailOrderComponent', 'selector': 'app-detail-order'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FormClientComponent', 'selector': 'app-form-client'},{'name': 'FormOrderComponent', 'selector': 'app-form-order'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconCloseComponent', 'selector': 'app-icon-close'},{'name': 'IconDeleteComponent', 'selector': 'app-icon-delete'},{'name': 'IconEditComponent', 'selector': 'app-icon-edit'},{'name': 'IconNavComponent', 'selector': 'app-icon-nav'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageAddClientComponent', 'selector': 'app-page-add-client'},{'name': 'PageAddOrderComponent', 'selector': 'app-page-add-order'},{'name': 'PageEditClientComponent', 'selector': 'app-page-edit-client'},{'name': 'PageEditOrderComponent', 'selector': 'app-page-edit-order'},{'name': 'PageListClientsComponent', 'selector': 'app-page-list-clients'},{'name': 'PageListOrdersComponent', 'selector': 'app-page-list-orders'},{'name': 'PageLoginComponent', 'selector': 'app-page-login'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'SubnavComponent', 'selector': 'app-subnav'},{'name': 'TableauDarkComponent', 'selector': 'app-tableau-dark'},{'name': 'TableauLightComponent', 'selector': 'app-tableau-light'},{'name': 'TemplateContainerComponent', 'selector': 'app-template-container'},{'name': 'TemplateFullwidthComponent', 'selector': 'app-template-fullwidth'},{'name': 'TextBandeauComponent', 'selector': 'app-text-bandeau'},{'name': 'TextPagesComponent', 'selector': 'app-text-pages'},{'name': 'UiComponent', 'selector': 'app-ui'}];
+    var DIRECTIVES = [{'name': 'StateDirective', 'selector': '[appState]'}];
     var ACTUAL_COMPONENT = {'name': 'PageAddOrderComponent'};
 </script>
 <script src="../js/tree.js"></script>

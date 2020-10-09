@@ -4,6 +4,7 @@ import { CommentOrderComponent } from './components/comment-order/comment-order.
 import { DetailOrderComponent } from './components/detail-order/detail-order.component';
 import { PageAddOrderComponent } from './pages/page-add-order/page-add-order.component';
 import { PageListOrdersComponent } from './pages/page-list-orders/page-list-orders.component';
+import { PageEditOrderComponent } from './pages/page-edit-order/page-edit-order.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
     data: {title: 'Orders'}
   },
   { path: 'add', component: PageAddOrderComponent },
+  { path: 'edit/:id', component: PageEditOrderComponent },
 ];
 
 @NgModule({

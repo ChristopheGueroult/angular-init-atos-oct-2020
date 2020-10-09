@@ -10,6 +10,7 @@ import { StateDirective } from './directives/state.directive';
 import { TotalPipe } from './pipes/total.pipe';
 import { TableauDarkComponent } from './components/tableau-dark/tableau-dark.component';
 import { SubnavComponent } from './components/subnav/subnav.component';
+import { IconsModule } from '../icons/icons.module';
 
 
 
@@ -28,7 +29,8 @@ import { SubnavComponent } from './components/subnav/subnav.component';
     StateDirective,
     ReactiveFormsModule,
     TableauDarkComponent,
-    SubnavComponent
+    SubnavComponent,
+    IconsModule
   ]
 })
 export class SharedModule { }

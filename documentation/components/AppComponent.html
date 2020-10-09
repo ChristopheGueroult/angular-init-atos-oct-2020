@@ -73,6 +73,10 @@
     <table class="table table-sm table-hover">
         <tbody>
 
+            <tr>
+                <td class="col-md-3">changeDetection</td>
+                <td class="col-md-9"><code>ChangeDetectionStrategy.OnPush</code></td>
+            </tr>
 
 
 
@@ -175,7 +179,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/app.component.ts:9</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/app.component.ts:10</a></div>
                             </td>
                         </tr>
 
@@ -188,12 +192,13 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, ChangeDetectionStrategy } from &#x27;@angular/core&#x27;;
 
 @Component({
   selector: &#x27;app-root&#x27;,
   templateUrl: &#x27;./app.component.html&#x27;,
-  styleUrls: [&#x27;./app.component.scss&#x27;]
+  styleUrls: [&#x27;./app.component.scss&#x27;],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
   title &#x3D; &#x27;crm-atos-octobre&#x27;;
@@ -246,8 +251,8 @@ export class AppComponent {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><app-ui>  <app-header class="header"></app-header>  <app-nav class="nav"></app-nav>  <app-footer class="footer"></app-footer>  <router-outlet class="content"></router-outlet></app-ui></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconCloseComponent', 'selector': 'app-icon-close'},{'name': 'IconDeleteComponent', 'selector': 'app-icon-delete'},{'name': 'IconEditComponent', 'selector': 'app-icon-edit'},{'name': 'IconNavComponent', 'selector': 'app-icon-nav'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageAddClientComponent', 'selector': 'app-page-add-client'},{'name': 'PageAddOrderComponent', 'selector': 'app-page-add-order'},{'name': 'PageEditClientComponent', 'selector': 'app-page-edit-client'},{'name': 'PageEditOrderComponent', 'selector': 'app-page-edit-order'},{'name': 'PageListClientsComponent', 'selector': 'app-page-list-clients'},{'name': 'PageListOrdersComponent', 'selector': 'app-page-list-orders'},{'name': 'PageLoginComponent', 'selector': 'app-page-login'},{'name': 'TemplateContainerComponent', 'selector': 'app-template-container'},{'name': 'TemplateFullwidthComponent', 'selector': 'app-template-fullwidth'},{'name': 'TextBandeauComponent', 'selector': 'app-text-bandeau'},{'name': 'TextPagesComponent', 'selector': 'app-text-pages'},{'name': 'UiComponent', 'selector': 'app-ui'}];
-    var DIRECTIVES = [];
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ButtonComponent', 'selector': 'app-button'},{'name': 'CommentOrderComponent', 'selector': 'app-comment-order'},{'name': 'DetailOrderComponent', 'selector': 'app-detail-order'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FormClientComponent', 'selector': 'app-form-client'},{'name': 'FormOrderComponent', 'selector': 'app-form-order'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconCloseComponent', 'selector': 'app-icon-close'},{'name': 'IconDeleteComponent', 'selector': 'app-icon-delete'},{'name': 'IconEditComponent', 'selector': 'app-icon-edit'},{'name': 'IconNavComponent', 'selector': 'app-icon-nav'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageAddClientComponent', 'selector': 'app-page-add-client'},{'name': 'PageAddOrderComponent', 'selector': 'app-page-add-order'},{'name': 'PageEditClientComponent', 'selector': 'app-page-edit-client'},{'name': 'PageEditOrderComponent', 'selector': 'app-page-edit-order'},{'name': 'PageListClientsComponent', 'selector': 'app-page-list-clients'},{'name': 'PageListOrdersComponent', 'selector': 'app-page-list-orders'},{'name': 'PageLoginComponent', 'selector': 'app-page-login'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'SubnavComponent', 'selector': 'app-subnav'},{'name': 'TableauDarkComponent', 'selector': 'app-tableau-dark'},{'name': 'TableauLightComponent', 'selector': 'app-tableau-light'},{'name': 'TemplateContainerComponent', 'selector': 'app-template-container'},{'name': 'TemplateFullwidthComponent', 'selector': 'app-template-fullwidth'},{'name': 'TextBandeauComponent', 'selector': 'app-text-bandeau'},{'name': 'TextPagesComponent', 'selector': 'app-text-pages'},{'name': 'UiComponent', 'selector': 'app-ui'}];
+    var DIRECTIVES = [{'name': 'StateDirective', 'selector': '[appState]'}];
     var ACTUAL_COMPONENT = {'name': 'AppComponent'};
 </script>
 <script src="../js/tree.js"></script>

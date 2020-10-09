@@ -121,6 +121,29 @@
     <h3 id="index">Index</h3>
     <table class="table table-sm table-bordered index-table">
         <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#collection$">collection$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#headers">headers</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#states">states</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
 
                 <tr>
                     <td class="col-md-4">
@@ -131,7 +154,15 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#changeState">changeState</a>
+                            </li>
+                            <li>
                                 <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#popup">popup</a>
                             </li>
                         </ul>
                     </td>
@@ -151,15 +182,57 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor()</code>
+<code>constructor(cs: <a href="../injectables/ClientsService.html">ClientsService</a>, ref: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:16</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>cs</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ClientsService.html" target="_self" >ClientsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ref</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
             </tbody>
         </table>
 </section>
@@ -173,6 +246,89 @@
     <h3 id="methods">
         Methods
     </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeState"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            changeState
+                        </b>
+                        <a href="#changeState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>changeState(item: <a href="../classes/Client.html">Client</a>, event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:36</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                                <code><a href="../classes/Client.html" target="_self" >Client</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
     <table class="table table-sm table-bordered">
         <tbody>
             <tr>
@@ -195,8 +351,49 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="12"
-                            class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:12</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:22</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="popup"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            popup
+                        </b>
+                        <a href="#popup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>popup()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="32"
+                            class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:32</a></div>
                 </td>
             </tr>
 
@@ -213,12 +410,105 @@
         </tbody>
     </table>
 </section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="collection$"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            collection$</b>
+                            <a href="#collection$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Client.html" target="_self" >Observable&lt;Client[]&gt;</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="headers"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            headers</b>
+                            <a href="#headers"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="states"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            states</b>
+                            <a href="#states"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>Object.values(StateClient)</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/clients/pages/page-list-clients/page-list-clients.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
 
 </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ChangeDetectorRef } from &#x27;@angular/core&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+import { Client } from &#x27;src/app/core/models/client&#x27;;
+import { StateClient } from &#x27;src/app/core/enums/state-client.enum&#x27;;
+import { ClientsService } from &#x27;src/app/core/services/clients.service&#x27;;
 
 @Component({
   selector: &#x27;app-page-list-clients&#x27;,
@@ -227,9 +517,34 @@
 })
 export class PageListClientsComponent implements OnInit {
 
-  constructor() { }
+  public collection$: Observable&lt;Client[]&gt;;
+  public headers: string[];
+  public states &#x3D; Object.values(StateClient);
+  constructor(
+    private cs: ClientsService,
+    private ref: ChangeDetectorRef
+  ) { }
 
   ngOnInit(): void {
+    this.collection$ &#x3D; this.cs.collection;
+    this.headers &#x3D; [
+      &#x27;Non&#x27;,
+      &#x27;Total HT&#x27;,
+      &#x27;Total TTC&#x27;,
+      &#x27;State&#x27;
+    ];
+  }
+
+  public popup(): void {
+    console.log(&#x27;open popup&#x27;);
+  }
+
+  public changeState(item: Client, event): void {
+    const state &#x3D; event.target.value;
+    this.cs.changeState(item, state).subscribe((res) &#x3D;&gt; {
+      item.state &#x3D; res.state;
+      this.ref.detectChanges();
+    });
   }
 
 }
@@ -237,7 +552,24 @@ export class PageListClientsComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;p&gt;page-list-clients works!&lt;/p&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;app-template-fullwidth title&#x3D;&quot;Clients&quot;&gt;
+
+  &lt;app-tableau-light *ngIf&#x3D;&quot;collection$ | async as collection&quot; [headers]&#x3D;&quot;headers&quot;&gt;
+    &lt;tr *ngFor&#x3D;&quot;let item of collection&quot;&gt;
+      &lt;td&gt;{{ item.name }}&lt;/td&gt;
+      &lt;td&gt;{{ item.totalCaHt | currency }}&lt;/td&gt;
+      &lt;td&gt;{{ item.totalCaHt | total: 1: item.tva | currency }}&lt;/td&gt;
+      &lt;td [appState]&#x3D;&quot;item.state&quot;&gt;
+        &lt;select (change)&#x3D;&quot;changeState(item, $event)&quot;&gt;
+          &lt;option *ngFor&#x3D;&quot;let state of states&quot; [value]&#x3D;&quot;state&quot; [selected]&#x3D;&quot;state &#x3D;&#x3D;&#x3D; item.state&quot;&gt;{{ state }}&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/app-tableau-light&gt;
+
+  &lt;app-button label&#x3D;&quot;Add an order&quot; route&#x3D;&quot;add&quot;&gt;&lt;/app-button&gt;
+
+&lt;/app-template-fullwidth&gt;
 </code></pre>
     </div>
 
@@ -245,7 +577,8 @@ export class PageListClientsComponent implements OnInit {
                 <p class="comment">
                     <code>./page-list-clients.component.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss"></code></pre>
+                <pre class="line-numbers"><code class="language-scss">
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -273,9 +606,9 @@ export class PageListClientsComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><p>page-list-clients works!</p></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconCloseComponent', 'selector': 'app-icon-close'},{'name': 'IconDeleteComponent', 'selector': 'app-icon-delete'},{'name': 'IconEditComponent', 'selector': 'app-icon-edit'},{'name': 'IconNavComponent', 'selector': 'app-icon-nav'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageAddClientComponent', 'selector': 'app-page-add-client'},{'name': 'PageAddOrderComponent', 'selector': 'app-page-add-order'},{'name': 'PageEditClientComponent', 'selector': 'app-page-edit-client'},{'name': 'PageEditOrderComponent', 'selector': 'app-page-edit-order'},{'name': 'PageListClientsComponent', 'selector': 'app-page-list-clients'},{'name': 'PageListOrdersComponent', 'selector': 'app-page-list-orders'},{'name': 'PageLoginComponent', 'selector': 'app-page-login'},{'name': 'TemplateContainerComponent', 'selector': 'app-template-container'},{'name': 'TemplateFullwidthComponent', 'selector': 'app-template-fullwidth'},{'name': 'TextBandeauComponent', 'selector': 'app-text-bandeau'},{'name': 'TextPagesComponent', 'selector': 'app-text-pages'},{'name': 'UiComponent', 'selector': 'app-ui'}];
-    var DIRECTIVES = [];
+        var COMPONENT_TEMPLATE = '<div><app-template-fullwidth title="Clients">  <app-tableau-light *ngIf="collection$ | async as collection" [headers]="headers">    <tr *ngFor="let item of collection">      <td>{{ item.name }}</td>      <td>{{ item.totalCaHt | currency }}</td>      <td>{{ item.totalCaHt | total: 1: item.tva | currency }}</td>      <td [appState]="item.state">        <select (change)="changeState(item, $event)">          <option *ngFor="let state of states" [value]="state" [selected]="state === item.state">{{ state }}</option>        </select>      </td>    </tr>  </app-tableau-light>  <app-button label="Add an order" route="add"></app-button></app-template-fullwidth></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ButtonComponent', 'selector': 'app-button'},{'name': 'CommentOrderComponent', 'selector': 'app-comment-order'},{'name': 'DetailOrderComponent', 'selector': 'app-detail-order'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FormClientComponent', 'selector': 'app-form-client'},{'name': 'FormOrderComponent', 'selector': 'app-form-order'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'IconCloseComponent', 'selector': 'app-icon-close'},{'name': 'IconDeleteComponent', 'selector': 'app-icon-delete'},{'name': 'IconEditComponent', 'selector': 'app-icon-edit'},{'name': 'IconNavComponent', 'selector': 'app-icon-nav'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PageAddClientComponent', 'selector': 'app-page-add-client'},{'name': 'PageAddOrderComponent', 'selector': 'app-page-add-order'},{'name': 'PageEditClientComponent', 'selector': 'app-page-edit-client'},{'name': 'PageEditOrderComponent', 'selector': 'app-page-edit-order'},{'name': 'PageListClientsComponent', 'selector': 'app-page-list-clients'},{'name': 'PageListOrdersComponent', 'selector': 'app-page-list-orders'},{'name': 'PageLoginComponent', 'selector': 'app-page-login'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'SubnavComponent', 'selector': 'app-subnav'},{'name': 'TableauDarkComponent', 'selector': 'app-tableau-dark'},{'name': 'TableauLightComponent', 'selector': 'app-tableau-light'},{'name': 'TemplateContainerComponent', 'selector': 'app-template-container'},{'name': 'TemplateFullwidthComponent', 'selector': 'app-template-fullwidth'},{'name': 'TextBandeauComponent', 'selector': 'app-text-bandeau'},{'name': 'TextPagesComponent', 'selector': 'app-text-pages'},{'name': 'UiComponent', 'selector': 'app-ui'}];
+    var DIRECTIVES = [{'name': 'StateDirective', 'selector': '[appState]'}];
     var ACTUAL_COMPONENT = {'name': 'PageListClientsComponent'};
 </script>
 <script src="../js/tree.js"></script>

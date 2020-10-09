@@ -30,7 +30,27 @@
                <div class="content getting-started">
                    <div class="content-data">
 
-<p>☐ preloading strategy</p>
+<p>☐ styles on tableau light scss
+☐ encapsulation tableau light
+☐ agilité change tableau</p>
+<p>☐ formulaires</p>
+<p>☐ certifs : claire nico momo tibo</p>
+<p>TP Edition
+Part 1
+☐ ajouter un icon edit dans la colone &quot;action&quot;
+☐ au click sur cet icon on appel une fn dans le ts en lui passant l&#39;item sur lequel on click
+☐ cette fn redirige l&#39;utilisateur (dans le ts) vers la route &quot;orders/edit/(id)&quot;
+☐ sur order-routing-module créer une route &quot;edit/?&quot; qui prend un paramèter id dans l&#39;url</p>
+<p>Part 2
+vous arrivez sur la route orders/edit/1 par exemple et le router ajouter dans le dom <app-page-edit>
+☐ page-edit-component.ts :
+☐ récupérer l&#39;id qui se trouve dans l&#39;url
+☐ appeler la méthode getItemById(id) de orders service et faire un subscribe()
+☐ dans le subscribe on récupère la réponse de l&#39;api à savoir l&#39;item qui correspond à l&#39;id récupéré dans l&#39;url
+☐ une fois récupérer cet item, dans le template html de la page, on veut afficher <app-form-order> et binder l&#39;input init de form-order-component.ts avec cet item
+☐ l&#39;output de form order component ts qu&#39;on utilise dans le template html de la page (comme la page add),
+☐ cette output doit appeler une méthode update que l&#39;on créé dans le ts de la page et qui fait un subscribe sur this.os.update(item) pour mettre à jour l&#39;item
+☐ dans le subscribe, on redirige l&#39;utilisateur vers la route &quot;orders&quot;</p>
 
 
 

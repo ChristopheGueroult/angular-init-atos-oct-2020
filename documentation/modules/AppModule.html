@@ -207,13 +207,14 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { HttpClientModule } from &#x27;@angular/common/http&#x27;;
+import &#x27;@angular/common/locales/global/fr&#x27;;
+import { LOCALE_ID, NgModule, DEFAULT_CURRENCY_CODE } from &#x27;@angular/core&#x27;;
 import { BrowserModule } from &#x27;@angular/platform-browser&#x27;;
 import { NgbModule } from &#x27;@ng-bootstrap/ng-bootstrap&#x27;;
 import { AppRoutingModule } from &#x27;./app-routing.module&#x27;;
 import { AppComponent } from &#x27;./app.component&#x27;;
 import { CoreModule } from &#x27;./core/core.module&#x27;;
-
 
 @NgModule({
   declarations: [
@@ -223,9 +224,10 @@ import { CoreModule } from &#x27;./core/core.module&#x27;;
     BrowserModule,
     CoreModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: &#x27;fr&#x27; }, {provide: DEFAULT_CURRENCY_CODE, useValue: &#x27;EUR&#x27;}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
