@@ -1,9 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, Subject, BehaviorSubject } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Order } from '../models/order';
 import { StateOrder } from '../enums/state-order.enum';
+import { tap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +12,13 @@ import { StateOrder } from '../enums/state-order.enum';
 export class OrdersService {
   private collection$: Observable<Order[]>;
   private urlApi = environment.urlApi;
+  public myItem$ = new BehaviorSubject<Order>(null);
   constructor(private http: HttpClient) {
-    this.collection = this.http.get<Order[]>(`${this.urlApi}/orders`);
+    this.collection = this.http.get<Order[]>(`${this.urlApi}/orders`).pipe(
+      tap((data) => {
+        this.myItem$.next(data[0]);
+      })
+    );
   }
 
   get collection(): Observable<Order[]> {
@@ -31,6 +37,10 @@ export class OrdersService {
 
   public update(item: Order): Observable<Order> {
     return this.http.put<Order>(`${this.urlApi}/orders/${item.id}`, item);
+  }
+
+  public add(item: Order): Observable<Order> {
+    return this.http.post<Order>(`${this.urlApi}/orders`, item);
   }
 
   // delete

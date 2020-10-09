@@ -4,7 +4,7 @@
       "tjmHt": 1200,
       "nbJours": 2,
       "tva": 20,
-      "state": "OPTION",
+      "state": "CANCELED",
       "typePresta": "formation",
       "client": "M2i",
       "comment": "merci m2i",
@@ -19,6 +19,36 @@
       "client": "Modis",
       "comment": "merci modis",
       "id": 2
+    },
+    {
+      "tjmHt": 1100,
+      "nbJours": 10,
+      "tva": 20,
+      "state": "OPTION",
+      "typePresta": "formation",
+      "client": "Atos",
+      "comment": "Merci Atos",
+      "id": 3
+    },
+    {
+      "tjmHt": 1100,
+      "nbJours": 30,
+      "tva": 20,
+      "state": "OPTION",
+      "typePresta": "Coaching",
+      "client": "nemesys",
+      "comment": "Merci ",
+      "id": 4
+    },
+    {
+      "tjmHt": 1100,
+      "nbJours": 1,
+      "tva": 20,
+      "state": "OPTION",
+      "typePresta": "Coaching",
+      "client": "Modis",
+      "comment": null,
+      "id": 5
     }
   ],
   "clients": [
@@ -37,6 +67,14 @@
       "name": "Modis",
       "totalCaHt": 120000,
       "comment": "un comment pour client modis"
+    },
+    {
+      "tva": 20,
+      "state": "ACTIVE",
+      "name": "modis",
+      "totalCaHt": 0,
+      "comment": "rsger",
+      "id": 3
     }
   ]
 }

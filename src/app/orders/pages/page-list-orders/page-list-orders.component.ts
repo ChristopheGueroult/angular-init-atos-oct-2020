@@ -1,8 +1,10 @@
-import { Component, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
+import { StateOrder } from 'src/app/core/enums/state-order.enum';
+import { Link } from 'src/app/core/interfaces/link';
 import { Order } from 'src/app/core/models/order';
 import { OrdersService } from 'src/app/core/services/orders.service';
-import { Observable, Subscription } from 'rxjs';
-import { StateOrder } from 'src/app/core/enums/state-order.enum';
 
 @Component({
   selector: 'app-page-list-orders',
@@ -10,19 +12,34 @@ import { StateOrder } from 'src/app/core/enums/state-order.enum';
   styleUrls: ['./page-list-orders.component.scss']
 })
 export class PageListOrdersComponent implements OnInit {
-  // public collection: Order[];
-  // private sub: Subscription;
   public collection$: Observable<Order[]>;
   public headers: string[];
   public states = Object.values(StateOrder);
+  public myLinks: Link[];
+  public title: string;
   constructor(
     private os: OrdersService,
-    private ref: ChangeDetectorRef
+    private ref: ChangeDetectorRef,
+    private route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
+    this.route.data.subscribe((data) => {
+      this.title = data.title;
+    });
+    this.myLinks = [
+      {
+        route: 'detail',
+        label: 'Order details'
+      },
+      {
+        route: 'comment',
+        label: 'Order comment'
+      }
+    ];
     this.collection$ = this.os.collection;
     this.headers = [
+      'Actions',
       'Type',
       'Client',
       'NbJours',
@@ -31,9 +48,6 @@ export class PageListOrdersComponent implements OnInit {
       'Total TTC',
       'State'
     ];
-    // this.sub = this.os.collection.subscribe((datas) => {
-    //   this.collection = datas;
-    // });
   }
 
   public popup(): void {
@@ -48,8 +62,9 @@ export class PageListOrdersComponent implements OnInit {
     });
   }
 
-  // ngOnDestroy(): void {
-  //   this.sub.unsubscribe();
-  // }
+  public getDetails(item): void {
+    this.os.myItem$.next(item);
+
+  }
 
 }

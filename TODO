@@ -3,3 +3,24 @@
 ☐ agilité change tableau
 
 ☐ formulaires
+
+☐ certifs : claire nico momo tibo
+
+TP Edition
+Part 1
+☐ ajouter un icon edit dans la colone "action"
+☐ au click sur cet icon on appel une fn dans le ts en lui passant l'item sur lequel on click
+☐ cette fn redirige l'utilisateur (dans le ts) vers la route "orders/edit/(id)"
+☐ sur order-routing-module créer une route "edit/?" qui prend un paramèter id dans l'url
+
+Part 2
+vous arrivez sur la route orders/edit/1 par exemple et le router ajouter dans le dom <app-page-edit>
+☐ page-edit-component.ts :
+☐ récupérer l'id qui se trouve dans l'url
+☐ appeler la méthode getItemById(id) de orders service et faire un subscribe()
+☐ dans le subscribe on récupère la réponse de l'api à savoir l'item qui correspond à l'id récupéré dans l'url
+☐ une fois récupérer cet item, dans le template html de la page, on veut afficher <app-form-order> et binder l'input init de form-order-component.ts avec cet item
+☐ l'output de form order component ts qu'on utilise dans le template html de la page (comme la page add),
+☐ cette output doit appeler une méthode update que l'on créé dans le ts de la page et qui fait un subscribe sur this.os.update(item) pour mettre à jour l'item
+☐ dans le subscribe, on redirige l'utilisateur vers la route "orders"
+

@@ -1,0 +1,35 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+  <div class="form-group">
+    <label for="name">name</label>
+    <input formControlName="name" type="text" class="form-control" id="type">
+    <div *ngIf="form.get('name').invalid && form.get('name').touched" class="alert alert-danger">error</div>
+  </div>
+
+  <div class="form-group">
+    <label for="totalCaHt">totalCaHt</label>
+    <input formControlName="totalCaHt" type="number" class="form-control" id="totalCaHt">
+    <div *ngIf="form.get('totalCaHt').invalid && form.get('totalCaHt').touched" class="alert alert-danger">error</div>
+  </div>
+
+  <div class="form-group">
+    <label for="tva">tva</label>
+    <input formControlName="tva" type="number" class="form-control" id="tva">
+  </div>
+
+
+  <div class="form-group">
+    <label for="state">state</label>
+    <select formControlName="state" class="form-control" id="state">
+      <option *ngFor="let state of states" [value]="state">{{ state }}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="comment">comment</label>
+    <textarea formControlName="comment" class="form-control" id="comment"></textarea>
+  </div>
+
+  <button [disabled]="form.invalid" type="submit" class="btn btn-primary">Submit</button>
+
+</form>
